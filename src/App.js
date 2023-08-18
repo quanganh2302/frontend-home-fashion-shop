@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Link, Router } from "react-router-dom";
+// import { routes } from "./routes/index.js";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+// import { fetchProfile } from "./features/Auth/thunk";
+import RouteComponent from "./hoc/RouteComponent";
+import HomeWomen from "./pages/Home-women/HomeWomen.jsx";
+import HomeMan from "./pages/Home-men/HomeMen.jsx";
+
+// import SignIn from "./features/Auth/SignIn";
 
 function App() {
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch();
+  // }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<RouteComponent Component={HomeWomen}></RouteComponent>}
+        ></Route>
+                <Route
+          path="/men"
+          element={<RouteComponent Component={HomeMan}></RouteComponent>}
+        ></Route>
+        {/* <Route
+          path="/signin"
+          element={
+            <RouteComponent
+              isAuth={true}
+              Component={SignIn}
+              redirectPath={"/"}
+            ></RouteComponent>
+          }
+        ></Route>
+        <Route
+          path="/seats/:id"
+          element={<RouteComponent Component={SignIn}></RouteComponent>}
+        ></Route> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+
