@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import RouteComponent from "./hoc/RouteComponent";
 import HomeWomen from "./pages/Home-women/HomeWomen.jsx";
 import HomeMan from "./pages/Home-men/HomeMen.jsx";
+import HomeLayout from "./hoc/HomeLayout";
 
 // import SignIn from "./features/Auth/SignIn";
 
@@ -19,12 +20,22 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<RouteComponent Component={HomeWomen}></RouteComponent>}
-        ></Route>
-                <Route
+          element={<RouteComponent Component={HomeLayout}></RouteComponent>}
+        >
+          <Route
+            path="/"
+            element={<RouteComponent Component={HomeWomen}></RouteComponent>}
+          ></Route>
+        </Route>
+        <Route
           path="/men"
-          element={<RouteComponent Component={HomeMan}></RouteComponent>}
-        ></Route>
+          element={<RouteComponent Component={HomeLayout}></RouteComponent>}
+        >
+          <Route
+            path="/men"
+            element={<RouteComponent Component={HomeMan}></RouteComponent>}
+          ></Route>
+        </Route>
         {/* <Route
           path="/signin"
           element={
@@ -45,5 +56,3 @@ function App() {
 }
 
 export default App;
-
-

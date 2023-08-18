@@ -1,0 +1,63 @@
+.topBar {
+  .topBar-left {
+    .facebook,
+    .instagram,
+    .twitter,
+    .pinterest {
+      width: 14px;
+      height: 14px;
+      fill: white;
+    }
+  }
+  .topBar-center {
+    span {
+      border-bottom: 1px solid;
+    }
+  }
+  .topBar-right {
+    .wrap-lang,
+    .wrap-flag {
+      .lang,
+      .flag {
+        .arrD {
+          color: white;
+          width: 8px;
+        }
+      }
+    }
+    .wrap-lang{
+      .popup-lang{
+        position: absolute;
+        top: 30.5px;
+        right: 0;
+        background-color: #1d1d1d;
+        width: 100px;
+        height: 70px;
+        padding: 15px;
+        cursor: pointer;
+        button{
+          &:hover{
+            color: #ff8421;
+          }
+        }
+      }
+    }
+    .wrap-flag{
+      .popup-flag{
+        position: absolute;
+        top: 30.5px;
+        right: 0;
+        background-color: #1d1d1d;
+        width: 100px;
+        min-height: 70px;
+        padding: 15px;
+        cursor: pointer;
+        button{
+          &:hover{
+            color: #ff8421;
+          }
+        }
+      }
+    }
+  }
+}
