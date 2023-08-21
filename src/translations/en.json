@@ -1,5 +1,13 @@
 {
   "top-bar": {
     "title": "10% off your next order, use code :"
+  },
+  "header": {
+    "women": "women",
+    "men": "men",
+    "bag": "bag",
+    "about": "about",
+    "search": "search",
+    "shopping-cart": "SHOPPING CART"
   }
 }

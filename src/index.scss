@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-primary: #000000;
+  --text-secondary: #ff8421;
+  --text-white: #ffffff;
+  --text-dimWhite: #868686;
+  --text-facebook: #3b5998;
+  --text-twitter: #1da1f2;
+  --text-instagram: #e03566;
+  --text-pinterest: #cb2027;
+}
+
+$xs: 480px;
+$ss: 620px;
+$sm: 768px;
+$md: 1060px;
+$lg: 1200px;
+$xl: 1700px;
+
+.container-custom {
+  padding: 0 15px;
+  @media (min-width: $lg) {
+    padding: 0 80px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+
+.box-shadow-popup {
+  box-shadow: 0 0 26px #0000000f;
+}
+
+/* animation  */
+@keyframes slide-up {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+// @mixin animation($name, $duration, $timing-function, $delay, $iteration-count) {
+//   animation-name: $name;
+//   animation-duration: $duration;
+//   animation-timing-function: $timing-function;
+//   animation-delay: $delay;
+//   animation-iteration-count: $iteration-count;
+// }

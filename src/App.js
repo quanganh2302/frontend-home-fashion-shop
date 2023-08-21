@@ -11,10 +11,6 @@ import HomeLayout from "./hoc/HomeLayout";
 // import SignIn from "./features/Auth/SignIn";
 
 function App() {
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch();
-  // }, []);
   return (
     <BrowserRouter>
       <Routes>
@@ -36,20 +32,6 @@ function App() {
             element={<RouteComponent Component={HomeMan}></RouteComponent>}
           ></Route>
         </Route>
-        {/* <Route
-          path="/signin"
-          element={
-            <RouteComponent
-              isAuth={true}
-              Component={SignIn}
-              redirectPath={"/"}
-            ></RouteComponent>
-          }
-        ></Route>
-        <Route
-          path="/seats/:id"
-          element={<RouteComponent Component={SignIn}></RouteComponent>}
-        ></Route> */}
       </Routes>
     </BrowserRouter>
   );

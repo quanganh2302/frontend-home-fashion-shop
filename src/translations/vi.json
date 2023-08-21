@@ -1,5 +1,13 @@
 {
   "top-bar": {
     "title": "Giảm 10% cho đơn hàng tiếp theo của bạn, sử dụng mã:"
+  },
+  "header": {
+    "women": "Nữ",
+    "men": "Nam",
+    "bag": "Túi xách",
+    "about": "Về chúng tôi",
+    "search": "Tìm kiếm",
+    "shopping-cart": "Giỏ hàng"
   }
 }

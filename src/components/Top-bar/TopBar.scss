@@ -1,17 +1,58 @@
+@import url("../../index.scss");
+
 .topBar {
   .topBar-left {
     .facebook,
     .instagram,
     .twitter,
-    .pinterest {
-      width: 14px;
+    .pinterest,
+    .gitHub {
+      width: 18px;
       height: 14px;
       fill: white;
+      cursor: pointer;
+      transition: all 1s;
+      position: relative;
+    }
+    .facebook {
+      &:hover {
+        fill: var(--text-facebook);
+        transform: translateY(-5px);
+      }
+    }
+    .instagram {
+      &:hover {
+        fill: var(--text-instagram);
+        transform: translateY(-5px);
+      }
+    }
+    .twitter {
+      &:hover {
+        fill: var(--text-twitter);
+        transform: translateY(-5px);
+      }
+    }
+    .pinterest {
+      &:hover {
+        fill: var(--text-pinterest);
+        transform: translateY(-5px);
+      }
+    }
+    .gitHub {
+      &:hover {
+        fill: #39d353;
+        transform: translateY(-5px);
+      }
     }
   }
   .topBar-center {
     span {
       border-bottom: 1px solid;
+      cursor: pointer;
+      &:hover {
+        color: #868686;
+        transition: all 0.5s;
+      }
     }
   }
   .topBar-right {
@@ -23,10 +64,14 @@
           color: white;
           width: 8px;
         }
+        &:hover {
+          color: #868686;
+          transition: all 0.5s;
+        }
       }
     }
-    .wrap-lang{
-      .popup-lang{
+    .wrap-lang {
+      .popup-lang {
         position: absolute;
         top: 30.5px;
         right: 0;
@@ -35,15 +80,15 @@
         height: 70px;
         padding: 15px;
         cursor: pointer;
-        button{
-          &:hover{
+        button {
+          &:hover {
             color: #ff8421;
           }
         }
       }
     }
-    .wrap-flag{
-      .popup-flag{
+    .wrap-flag {
+      .popup-flag {
         position: absolute;
         top: 30.5px;
         right: 0;
@@ -52,8 +97,8 @@
         min-height: 70px;
         padding: 15px;
         cursor: pointer;
-        button{
-          &:hover{
+        button {
+          &:hover {
             color: #ff8421;
           }
         }
