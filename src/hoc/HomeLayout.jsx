@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 export default function HomeLayout() {
   return (
-    <div className="">
+    <div className=" overflow-hidden relative">
       <TopBar />
       <Header />
       <Outlet />

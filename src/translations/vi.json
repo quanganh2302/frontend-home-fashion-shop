@@ -9,5 +9,26 @@
     "about": "Về chúng tôi",
     "search": "Tìm kiếm",
     "shopping-cart": "Giỏ hàng"
+  },
+  "banner": {
+    "info-1": "Ưu đãi 40%",
+    "title-1": "women collection",
+    "call-1": "thời trang phong cách",
+    "nav-1": "shop collection",
+    "info-2": "sản phẩm mới",
+    "title-2": "men collection",
+    "call-2": "men collection",
+    "nav-2": "shop collection",
+    "info-3": "bộ sưu tập mùa hè",
+    "title-3": "sản phẩm mới",
+    "call-3": "sản phẩm mới",
+    "nav-3": "shop collection"
+  },
+  "shop-now-women": {
+    "left": "Giày",
+    "center-title": "shop now, save later",
+    "center-nav": "shop collection",
+    "right-up": "Bộ sưu tập",
+    "right-down": "Phụ kiện"
   }
 }

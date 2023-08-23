@@ -9,5 +9,26 @@
     "about": "about",
     "search": "search",
     "shopping-cart": "SHOPPING CART"
+  },
+  "banner": {
+    "info-1": "up to 40% off",
+    "title-1": "women collection",
+    "call-1": "fashion style",
+    "nav-1": "shop collection",
+    "info-2": "new arrivals",
+    "title-2": "men collection",
+    "call-2": "men collection",
+    "nav-2": "shop collection",
+    "info-3": "spring - summer",
+    "title-3": "new arrivals",
+    "call-3": "new arrivals",
+    "nav-3": "shop collection"
+  },
+  "shop-now-women": {
+    "left": "Shose",
+    "center-title": "shop now, save later",
+    "center-nav": "shop collection",
+    "right-up": "women's",
+    "right-down": "accessories"
   }
 }

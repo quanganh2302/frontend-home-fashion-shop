@@ -6,6 +6,10 @@
 
 * {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -19,7 +23,7 @@
   --text-pinterest: #cb2027;
 }
 
-$xs: 480px;
+$xs: 390px;
 $ss: 620px;
 $sm: 768px;
 $md: 1060px;
@@ -28,8 +32,17 @@ $xl: 1700px;
 
 .container-custom {
   padding: 0 15px;
+  @media (min-width: $xs) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  @media (min-width: $md) {
+    width: 95%;
+    margin: 0 auto;
+  }
   @media (min-width: $lg) {
-    padding: 0 80px;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 

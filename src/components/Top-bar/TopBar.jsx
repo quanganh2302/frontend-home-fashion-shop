@@ -68,7 +68,7 @@ const TopBar = () => {
 
   return (
     <section
-      className={`topBar flex items-center justify-center md:justify-between bg-topBarBgColor text-white min-h-[43px] container-custom`}
+      className={`topBar flex items-center justify-center md:justify-between bg-topBarBgColor text-white min-h-[43px] px-[15px] md:px-[95px]`}
     >
       <div className="topBar-left ps-[15px] hidden md:flex gap-x-4 relative">
         <Facebook className="facebook " />
