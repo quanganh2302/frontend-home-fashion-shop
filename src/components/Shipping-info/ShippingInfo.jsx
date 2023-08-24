@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { FormattedMessage } from "react-intl";
+
 const ShippingInfo = () => {
   return (
     <section className="shipping-info">
@@ -59,11 +61,11 @@ const ShippingInfo = () => {
                 </svg>
               </div>
               <div className="item-text">
-                <h4>Shipping Worldwide</h4>
+                <h4><FormattedMessage id="shipping.title-1" /></h4>
                 <p>
-                  Free shipping on all US order or order
+                <FormattedMessage id="shipping.content-up-1" />
                   <br />
-                  above $100
+                  <FormattedMessage id="shipping.content-down-1" />
                 </p>
               </div>
             </div>
@@ -100,11 +102,11 @@ const ShippingInfo = () => {
                 </svg>
               </div>
               <div className="item-text">
-                <h4>14 Days Return</h4>
+              <h4><FormattedMessage id="shipping.title-2" /></h4>
                 <p>
-                  Simply return it within 30 days for
+                <FormattedMessage id="shipping.content-up-2" />
                   <br />
-                  an exchange.
+                  <FormattedMessage id="shipping.content-down-2" />
                 </p>
               </div>
             </div>
@@ -127,11 +129,11 @@ const ShippingInfo = () => {
                 </svg>
               </div>
               <div className="item-text">
-                <h4>Security Payment</h4>
+              <h4><FormattedMessage id="shipping.title-3" /></h4>
                 <p>
-                  We ensure secure payment
+                <FormattedMessage id="shipping.content-up-3" />
                   <br />
-                  with PEV
+                  <FormattedMessage id="shipping.content-down-3" />
                 </p>
               </div>
             </div>

@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
 import { BsFillStarFill } from "react-icons/bs";
+import { FormattedMessage } from "react-intl";
 const Testimonial = () => {
   return (
     <section className="testimonials">
@@ -18,7 +19,9 @@ const Testimonial = () => {
           <SwiperSlide>
             <div className="wrap-testimonial">
               <div className="testimonial-content">
-                <h3>From The People</h3>
+                <h3>
+                  <FormattedMessage id="testimonials.from-people" />
+                </h3>
                 <div className="wrap-start">
                   <BsFillStarFill />
                   <BsFillStarFill />
@@ -26,11 +29,10 @@ const Testimonial = () => {
                   <BsFillStarFill />
                 </div>
                 <p className="comment">
-                  “Very cute dress and fun color. I am also very
+                  <FormattedMessage id="testimonials.content-up" />
                   <span></span>
                   <br />
-                  impressed by the quality of the linen. Excited to wear this
-                  dress in the summer!”
+                  <FormattedMessage id="testimonials.content-down" />
                 </p>
                 <div className="testimonial-name">Jesicca A.</div>
               </div>
@@ -45,7 +47,9 @@ const Testimonial = () => {
           <SwiperSlide>
             <div className="wrap-testimonial">
               <div className="testimonial-content">
-                <h3>From The People</h3>
+                <h3>
+                  <FormattedMessage id="testimonials.from-people" />
+                </h3>
                 <div className="wrap-start">
                   <BsFillStarFill />
                   <BsFillStarFill />
@@ -53,10 +57,10 @@ const Testimonial = () => {
                   <BsFillStarFill />
                 </div>
                 <p className="comment">
-                  “Very cute dress and fun color. I am also very
+                  <FormattedMessage id="testimonials.content-up" />
+                  <span></span>
                   <br />
-                  impressed by the quality of the linen. Excited to wear this
-                  dress in the summer!”
+                  <FormattedMessage id="testimonials.content-down" />
                 </p>
                 <div className="testimonial-name">Jesicca A.</div>
               </div>
@@ -71,7 +75,9 @@ const Testimonial = () => {
           <SwiperSlide>
             <div className="wrap-testimonial">
               <div className="testimonial-content">
-                <h3>From The People</h3>
+                <h3>
+                  <FormattedMessage id="testimonials.from-people" />
+                </h3>
                 <div className="wrap-start">
                   <BsFillStarFill />
                   <BsFillStarFill />
@@ -79,10 +85,10 @@ const Testimonial = () => {
                   <BsFillStarFill />
                 </div>
                 <p className="comment">
-                  “Very cute dress and fun color. I am also very
+                  <FormattedMessage id="testimonials.content-up" />
+                  <span></span>
                   <br />
-                  impressed by the quality of the linen. Excited to wear this
-                  dress in the summer!”
+                  <FormattedMessage id="testimonials.content-down" />
                 </p>
                 <div className="testimonial-name">Jesicca A.</div>
               </div>

@@ -1,6 +1,6 @@
 .shipping-info {
   padding: 80px 0;
-  @media screen and (min-width: 380px) {
+  @media screen and (min-width: 360px) {
     padding: 40px 0;
   }
   @media screen and (min-width: 768px) {
@@ -38,7 +38,7 @@
         }
         .item-text {
           text-align: center;
-          @media screen and (min-width: 380px) {
+          @media screen and (min-width: 360px) {
             padding-bottom: 30px;
           }
           @media screen and (min-width: 768px) {

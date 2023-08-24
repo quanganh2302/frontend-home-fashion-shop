@@ -2,11 +2,11 @@
 
 .header {
   position: fixed;
-  z-index: 10000;
+  z-index: 10;
   width: 100%;
   background-color: #ffffff;
-  transition: all .5s;
-  @media screen and (min-width: 380px) {
+  transition: all 0.5s;
+  @media screen and (min-width: 360px) {
     position: relative;
   }
   @media screen and (min-width: 960px) {
@@ -18,18 +18,21 @@
       .header-top-left {
         .header-women,
         .header-men,
-        .header-bag,
+        .header-kid,
         .header-about {
           height: 76px;
           align-items: center;
           .women-nav,
           .man-nav,
-          .bag-nav,
+          .kid-nav,
           .about-nav {
             padding: 10px 15px;
             position: relative;
             translate: all 0.3s ease;
             border-radius: 10px;
+            h3 {
+              font-weight: 500;
+            }
             &:hover {
               background-color: #0000000d;
               &::after {
@@ -44,7 +47,7 @@
           }
           .popup-women,
           .popup-men,
-          .popup-bag {
+          .popup-kid {
             translate: all 0.3s ease;
             position: absolute;
             background-color: #ffffff;
@@ -52,6 +55,18 @@
             top: 76px;
             z-index: 999;
             left: 0;
+            .popup-item {
+              ul {
+                li {
+                  transition: all .5s;
+                  text-transform: capitalize;
+                  &:hover {
+                    color: #ff8421;
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
           }
         }
         .header-women {
@@ -68,9 +83,9 @@
             }
           }
         }
-        .header-bag {
+        .header-kid {
           &:hover {
-            .popup-bag {
+            .popup-kid {
               display: flex;
             }
           }
@@ -142,7 +157,7 @@
       @media screen and (min-width: 768px) {
         transform: translateX(-960px);
       }
-      @media screen and (min-width: 380px) {
+      @media screen and (min-width: 360px) {
         transform: translateX(-768px);
       }
       .menu-popup-top {
@@ -169,7 +184,7 @@
       @media screen and (min-width: 768px) {
         transform: translateX(0);
       }
-      @media screen and (min-width: 380px) {
+      @media screen and (min-width: 360px) {
         transform: translateX(0);
       }
     }
@@ -182,7 +197,7 @@
       right: 0;
       z-index: 40;
       transition: all 0.5s;
-      @media screen and (min-width: 380px) {
+      @media screen and (min-width: 360px) {
         transform: translateX(768px);
       }
       @media screen and (min-width: 768px) {
@@ -199,7 +214,7 @@
       }
     }
     .header-popup-cart.active-open-cart {
-      @media screen and (min-width: 380px) {
+      @media screen and (min-width: 360px) {
         transform: translateX(0px);
       }
       @media screen and (min-width: 768px) {
@@ -220,7 +235,7 @@
       z-index: 40;
       transition: all 0.5s;
 
-      @media screen and (min-width: 380px) {
+      @media screen and (min-width: 360px) {
         transform: translateX(768px);
       }
 
@@ -244,7 +259,7 @@
       }
     }
     .header-popup-search.active-open-search {
-      @media screen and (min-width: 380px) {
+      @media screen and (min-width: 360px) {
         transform: translateX(0px);
       }
       @media screen and (min-width: 768px) {

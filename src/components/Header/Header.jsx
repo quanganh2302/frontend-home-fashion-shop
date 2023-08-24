@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 import "./Header.scss";
 import styles from "../../styles";
 import Logo from "../../assets/logo";
@@ -100,6 +101,7 @@ const Header = () => {
           <div
             className={`header-top-left  w-1/3 flex items-center justify-start text-para4 font-poppins font-medium min-h-[70px] `}
           >
+            {/* popup women ----------------------------------  */}
             <div
               className={`header-women uppercase cursor-pointer hidden md:flex`}
             >
@@ -110,107 +112,169 @@ const Header = () => {
                 className={`popup-women box-shadow-popup hidden justify-around p-[30px]`}
               >
                 <div className="popup-item text-para3 font-light">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={`  pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-women.title-1" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-1-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-1-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-1-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-1-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-1-5" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-1-6" />
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="popup-item text-para3 font-light ">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={` pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-women.title-2" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-2-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-2-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-2-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-2-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-2-5" />
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="popup-item  text-para3 font-light">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={` pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-women.title-3" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-3-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-3-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-3-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-3-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-3-5" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-3-6" />
+                      </a>
+                    </li>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-3-7" />
+                      </a>
+                    </li>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-3-8" />
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="popup-item text-para3 font-light">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={` pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-women.title-2" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-4-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-4-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-4-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-4-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-4-5" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-women.row-4-6" />
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
+            {/* popup man ---------------------------------- */}
             <div
               className={`header-men uppercase cursor-pointer hidden md:flex`}
             >
@@ -221,213 +285,296 @@ const Header = () => {
                 className={`popup-men box-shadow-popup hidden justify-around p-[30px]`}
               >
                 <div className="popup-item text-para3 font-light">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao men</a>
+                  <h3 className={`  pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-men.title-1" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-1-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-1-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-1-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-1-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-1-5" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-1-6" />
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="popup-item text-para3 font-light ">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={` pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-men.title-2" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-2-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-2-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-2-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-2-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-2-5" />
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="popup-item  text-para3 font-light">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={` pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-men.title-3" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-3-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-3-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-3-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-3-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-3-5" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-3-6" />
+                      </a>
+                    </li>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-3-7" />
+                      </a>
+                    </li>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-3-8" />
+                      </a>
+                    </li>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-3-9" />
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="popup-item text-para3 font-light">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={` pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-men.title-2" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-4-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-4-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-2-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-4-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-4-5" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-men.row-4-6" />
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div
-              className={`header-bag uppercase cursor-pointer hidden md:flex`}
+              className={`header-kid uppercase cursor-pointer hidden md:flex`}
             >
-              <a className="bag-nav" href="#">
-                <FormattedMessage id="header.bag" />
+              <a className="kid-nav" href="#">
+                <FormattedMessage id="header.kid" />
               </a>
+              {/* Popup kid ------------------------------- */}
               <div
-                className={`popup-bag box-shadow-popup hidden justify-around p-[30px]`}
+                className={`popup-kid box-shadow-popup hidden justify-around p-[30px]`}
               >
                 <div className="popup-item text-para3 font-light">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">tui</a>
+                  <h3 className={`  pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-kid.title-1" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-1-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-1-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-1-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-1-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-1-5" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-1-6" />
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="popup-item text-para3 font-light ">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={` pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-kid.title-2" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-2-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-2-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-2-3" />
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="popup-item  text-para3 font-light">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={` pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-kid.title-3" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-3-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-3-2" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-3-3" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-3-4" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-3-5" />
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="popup-item text-para3 font-light">
-                  <h3 className={` pb-4 font-medium`}>
-                    <a href="#">Ao</a>
+                  <h3 className={` pb-4 font-semibold capitalize text-[18px]`}>
+                    <a href="#">
+                      <FormattedMessage id="popup-kid.title-2" />
+                    </a>
                   </h3>
                   <ul>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo phông</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-4-1" />
+                      </a>
                     </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo polo</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo sơ mi</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo len</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Something</a>
-                    </li>
-                    <li className={`pb-2`}>
-                      <a href="#">Áo có mũ</a>
+                    <li className={`mb-3`}>
+                      <a href="#">
+                        <FormattedMessage id="popup-kid.row-4-2" />
+                      </a>
                     </li>
                   </ul>
                 </div>

@@ -14,6 +14,16 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* <Route
+          path="/signin"
+          element={
+            <RouteComponent
+              isAuth={true}
+              Component={SignIn}
+              redirectPath={"/"}
+            ></RouteComponent>
+          }
+        ></Route> */}
         <Route
           path="/"
           element={<RouteComponent Component={HomeLayout}></RouteComponent>}
@@ -32,6 +42,23 @@ function App() {
             element={<RouteComponent Component={HomeMan}></RouteComponent>}
           ></Route>
         </Route>
+        <Route
+          path="/bags"
+          element={<RouteComponent Component={HomeLayout}></RouteComponent>}
+        >
+          <Route
+            path="/bags"
+            element={<RouteComponent Component={HomeMan}></RouteComponent>}
+          ></Route>
+        </Route>
+        <Route
+          path="/about"
+          element={<RouteComponent Component={HomeLayout}></RouteComponent>}
+        ></Route>
+        <Route
+          path="/wish-list"
+          element={<RouteComponent Component={HomeLayout}></RouteComponent>}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );

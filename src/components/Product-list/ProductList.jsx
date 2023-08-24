@@ -54,9 +54,15 @@ const ProductList = () => {
           ref={popupProductNav}
           className={isOpenPopup ? style : `${style} hidden`}
         >
-          <a href="">Best seller</a>
-          <a href="">on sale</a>
-          <a href="">new arrivals</a>
+          <a href="">
+            <FormattedMessage id="product-list.best-seller" />{" "}
+          </a>
+          <a href="">
+            <FormattedMessage id="product-list.on-sale" />
+          </a>
+          <a href="">
+            <FormattedMessage id="product-list.new-arrivals" />
+          </a>
         </div>
         {/* Product list ---------------------------------------- */}
         <div className="product-list-content flex justify-center items-center flex-wrap">

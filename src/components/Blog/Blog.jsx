@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
-import { BsFillStarFill } from "react-icons/bs";
+import { FormattedMessage } from "react-intl";
 
 const Blog = () => {
   // const sliderRef = useRef(null);
@@ -14,7 +14,9 @@ const Blog = () => {
   return (
     <section className="blog">
       <div className="blog-container container-custom">
-        <h3 className="blog-title">From our blog</h3>
+        <h3 className="blog-title">
+          <FormattedMessage id="blog.title" />
+        </h3>
         <div className="blog-slide">
           <Swiper
             spaceBetween={50}
@@ -49,7 +51,7 @@ const Blog = () => {
                   </p>
                   <h3>Christine Is A True Style Icon</h3>
                   <a className="read-more" href="">
-                    read more
+                     <FormattedMessage id="blog.read-more" />
                   </a>
                 </div>
               </div>
@@ -71,7 +73,7 @@ const Blog = () => {
                   </p>
                   <h3>Christine Is A True Style Icon</h3>
                   <a className="read-more" href="">
-                    read more
+                     <FormattedMessage id="blog.read-more" />
                   </a>
                 </div>
               </div>
@@ -93,7 +95,7 @@ const Blog = () => {
                   </p>
                   <h3>Christine Is A True Style Icon</h3>
                   <a className="read-more" href="">
-                    read more
+                     <FormattedMessage id="blog.read-more" />
                   </a>
                 </div>
               </div>
@@ -115,7 +117,7 @@ const Blog = () => {
                   </p>
                   <h3>Christine Is A True Style Icon</h3>
                   <a className="read-more" href="">
-                    read more
+                     <FormattedMessage id="blog.read-more" />
                   </a>
                 </div>
               </div>

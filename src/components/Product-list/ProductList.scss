@@ -31,7 +31,7 @@
       font-weight: 300 !important;
       z-index: 1000;
       background-color: #fff;
-      @media screen and (min-width: 380px) {
+      @media screen and (min-width: 360px) {
         transform: translateY(-250px);
       }
       @media screen and (min-width: 768px) {
@@ -51,7 +51,7 @@
       width: 100%;
       .product-item {
         width: 25%;
-        @media screen and (min-width: 380px) {
+        @media screen and (min-width: 360px) {
           width: 50%;
         }
         @media screen and (min-width: 768px) {

@@ -2,7 +2,7 @@
   .wrap-item {
     width: 100%;
     height: 515px;
-    @media screen and (min-width: 380px) {
+    @media screen and (min-width: 360px) {
       height: 370px;
     }
     @media screen and (min-width: 1060px) {
@@ -15,7 +15,7 @@
       overflow: hidden;
       position: relative;
       height: 420px;
-      @media screen and (min-width: 380px) {
+      @media screen and (min-width: 360px) {
         height: 260px;
         border: 1px solid rgba($color: #868686, $alpha: 0.3);
       }
@@ -32,7 +32,7 @@
         background-repeat: no-repeat;
         background-size: 130%;
         transition: all 1s;
-        @media screen and (min-width: 380px) {
+        @media screen and (min-width: 360px) {
           background-size: 130%;
         }
         @media screen and (min-width: 1060px) {
@@ -94,7 +94,7 @@
         font-weight: 300;
         text-transform: uppercase;
         transition: all 0.5s;
-        @media screen and (min-width: 380px) {
+        @media screen and (min-width: 360px) {
           opacity: 1;
           bottom: 40px;
         }
@@ -109,7 +109,7 @@
       }
       .item-quick-shop,
       .item-quick-view {
-        @media screen and (min-width: 380px) {
+        @media screen and (min-width: 360px) {
           width: 50%;
           height: 40px;
           position: relative;
@@ -162,7 +162,7 @@
       }
       .item-quick-shop {
         background-color: #fff;
-        @media screen and (min-width: 380px) {
+        @media screen and (min-width: 360px) {
           transform: translate(0, -100%);
           transition: none;
           border-left: 1px solid rgba($color: #868686, $alpha: 0.3);
@@ -184,7 +184,7 @@
           height: 20px;
           color: #fff;
           transition: all 0.5s;
-          @media screen and (min-width: 380px) {
+          @media screen and (min-width: 360px) {
             // position: absolute;
             left: 50%;
             transform: translate(-50%, 0);
@@ -214,7 +214,7 @@
       }
       .item-quick-view {
         background-color: #fff;
-        @media screen and (min-width: 380px) {
+        @media screen and (min-width: 360px) {
           transform: translateX(-100%);
           transition: none;
         }
@@ -228,7 +228,7 @@
           transform: translateY(0);
         }
         .icon-view {
-          @media screen and (min-width: 380px) {
+          @media screen and (min-width: 360px) {
             // position: absolute;
             left: 50%;
             transform: translate(0);
@@ -252,7 +252,7 @@
             transform: translateY(-50px);
           }
           .icon-view {
-            @media screen and (min-width: 380px) {
+            @media screen and (min-width: 360px) {
               transform: translate(0);
             }
             @media screen and (min-width: 1200px) {
@@ -274,7 +274,7 @@
           opacity: 1;
         }
         .item-quick-shop {
-          @media screen and (min-width: 380px) {
+          @media screen and (min-width: 360px) {
             transform: translate(0, -100%);
           }
 
@@ -284,7 +284,7 @@
           }
         }
         .item-quick-view {
-          @media screen and (min-width: 380px) {
+          @media screen and (min-width: 360px) {
             transform: translateX(-100%);
           }
 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
 import "./Footer.scss";
 import Facebook from "../../assets/FacebookIcon";
 import Instagram from "../../assets/InstagramIcon";
@@ -11,8 +12,9 @@ import { ReactComponent as ApplePay } from "../../assets/apple_pay.svg";
 import { ReactComponent as Visa } from "../../assets/visa.svg";
 import { ReactComponent as America } from "../../assets/american_express.svg";
 import { ReactComponent as Paypal } from "../../assets/paypal.svg";
-
+import { FormattedMessage } from "react-intl";
 const Footer = () => {
+  const lang = useSelector((state) => state.homeReducer.language);
   const [isFooterListOpen, setIsFooterListOpen] = useState(false);
   const [isFooterAboutOpen, setIsFooterAboutOpen] = useState(false);
   const [isFooterShopOpen, setIsFooterShopOpen] = useState(false);
@@ -39,13 +41,21 @@ const Footer = () => {
           <div className="footer-top ">
             <div className="footer-left">
               <div className="footer-left-input">
-                <h4>Get on the list</h4>
+                <h4>
+                  <FormattedMessage id="footer.footer-title-1" />
+                </h4>
                 <p>
-                  Subscribe for early access, exclusive discounts and
-                  partnerships
+                  <FormattedMessage id="footer.footer-decs-1" />
                 </p>
                 <div className="input-area">
-                  <input placeholder="Your email address" type="text" />
+                  <input
+                    placeholder={
+                      lang === "en"
+                        ? "Your email address"
+                        : "Địa chỉ email của bạn"
+                    }
+                    type="text"
+                  />
                   <button>
                     <BsArrowRight className="icon" />
                   </button>
@@ -71,71 +81,113 @@ const Footer = () => {
             </div>
             <div className="footer-right ">
               <div className="footer-right-col">
-                <p>ABOUT US</p>
+                <p>
+                  <FormattedMessage id="footer.footer-title-2" />{" "}
+                </p>
                 <ul>
                   <li>
-                    <a href="">Our Story</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-2-1" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Store Locations</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-2-2" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Careers</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-2-3" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Our Blog</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-2-4" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Brands</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-2-5" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Contact Us</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-2-6" />
+                    </a>
                   </li>
                 </ul>
               </div>
               <div className="footer-right-col">
-                <p>SHOP CATEGORIES</p>
+                <p>
+                  <FormattedMessage id="footer.footer-title-3" />{" "}
+                </p>
                 <ul>
                   <li>
-                    <a href="">Men</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-3-1" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Women</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-3-2" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Shoes</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-3-3" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Watches</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-3-4" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Jewelry</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-3-5" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Bags</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-3-6" />
+                    </a>
                   </li>
                 </ul>
               </div>
               <div className="footer-right-col">
-                <p>CUSTOMER CARE</p>
+                <p>
+                  <FormattedMessage id="footer.footer-title-4" />{" "}
+                </p>
                 <ul>
                   <li>
-                    <a href="">FAQs</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-4-1" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Collections & Delivery</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-4-2" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Returns & Refunds</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-4-3" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Terms & Conditions</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-4-4" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Delivery Return</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-4-5" />
+                    </a>
                   </li>
                   <li>
-                    <a href="">Store Locations</a>
+                    <a href="">
+                      <FormattedMessage id="footer.footer-row-4-6" />
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -175,7 +227,9 @@ const Footer = () => {
       <div className="footer-smartPhone-screen-device text-white ">
         <div className="footer-item">
           <div className="footer-row " onClick={handleOpenFooterList}>
-            <p>Get on the list</p>
+            <p>
+              <FormattedMessage id="footer.footer-title-1" />
+            </p>
             <div className="footer-icon">
               <BsPlusLg
                 className={!isFooterListOpen ? "footer-item-hidden" : "hidden"}
@@ -189,11 +243,17 @@ const Footer = () => {
             <div className="footer-left">
               <div className="footer-left-input">
                 <p>
-                  Subscribe for early access, exclusive discounts and
-                  partnerships
+                  <FormattedMessage id="footer.footer-decs-1" />
                 </p>
                 <div className="input-area">
-                  <input placeholder="Your email address" type="text" />
+                  <input
+                    placeholder={
+                      lang === "en"
+                        ? "Your email address"
+                        : "Địa chỉ email của bạn"
+                    }
+                    type="text"
+                  />
                   <button>
                     <BsArrowRight className="icon" />
                   </button>
@@ -221,7 +281,9 @@ const Footer = () => {
         </div>
         <div className="footer-item">
           <div className="footer-row" onClick={handleOpenFooterAbout}>
-            <p>About us</p>
+            <p>
+              <FormattedMessage id="footer.footer-title-2" />
+            </p>
             <div className="footer-icon">
               <BsPlusLg
                 className={!isFooterAboutOpen ? "footer-item-hidden" : "hidden"}
@@ -234,29 +296,43 @@ const Footer = () => {
           <div className={isFooterAboutOpen ? "footer-item-hidden" : "hidden"}>
             <ul>
               <li>
-                <a href="">Our Story</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-2-1" />
+                </a>
               </li>
               <li>
-                <a href="">Store Locations</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-2-2" />
+                </a>
               </li>
               <li>
-                <a href="">Careers</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-2-3" />
+                </a>
               </li>
               <li>
-                <a href="">Our Blog</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-2-4" />
+                </a>
               </li>
               <li>
-                <a href="">Brands</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-2-5" />
+                </a>
               </li>
               <li>
-                <a href="">Contact Us</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-2-6" />
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="footer-item">
           <div className="footer-row" onClick={handleOpenFooterShop}>
-            <p>Shop category</p>
+            <p>
+              <FormattedMessage id="footer.footer-title-3" />
+            </p>
             <div className="footer-icon">
               <BsPlusLg
                 className={!isFooterShopOpen ? "footer-item-hidden" : "hidden"}
@@ -269,29 +345,44 @@ const Footer = () => {
           <div className={isFooterShopOpen ? "footer-item-hidden" : "hidden"}>
             <ul>
               <li>
-                <a href="">Men</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-3-1" />
+                </a>
               </li>
               <li>
-                <a href="">Women</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-3-2" />
+                </a>
               </li>
               <li>
-                <a href="">Shoes</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-3-3" />
+                </a>
               </li>
               <li>
-                <a href="">Watches</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-3-4" />
+                </a>
               </li>
               <li>
-                <a href="">Jewelry</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-3-5" />
+                </a>
               </li>
               <li>
-                <a href="">Bags</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-3-6" />
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="footer-item">
           <div className="footer-row" onClick={handleOpenFooterCustomer}>
-            <p>customer care</p>
+            <p>
+              {" "}
+              <FormattedMessage id="footer.footer-title-4" />
+            </p>
             <div className="footer-icon">
               <BsPlusLg
                 className={
@@ -310,22 +401,34 @@ const Footer = () => {
           >
             <ul>
               <li>
-                <a href="">FAQs</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-4-1" />
+                </a>
               </li>
               <li>
-                <a href="">Collections & Delivery</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-4-2" />
+                </a>
               </li>
               <li>
-                <a href="">Returns & Refunds</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-4-3" />
+                </a>
               </li>
               <li>
-                <a href="">Terms & Conditions</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-4-4" />
+                </a>
               </li>
               <li>
-                <a href="">Delivery Return</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-4-5" />
+                </a>
               </li>
               <li>
-                <a href="">Store Locations</a>
+                <a href="">
+                  <FormattedMessage id="footer.footer-row-4-6" />
+                </a>
               </li>
             </ul>
           </div>
