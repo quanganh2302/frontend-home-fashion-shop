@@ -14,6 +14,9 @@ const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isOpenSearch, setIsOpenSearch] = useState(false);
   const [isOpenCart, setIsOpenCart] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [visible, setVisible] = useState(true);
+  const [isOnTop, setIsOnTop] = useState(true);
   const popupMenu = useRef(null);
   const popupSearch = useRef(null);
   const popupCart = useRef(null);
@@ -34,6 +37,20 @@ const Header = () => {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isVisible = prevScrollPos > currentScrollPos;
+      if (window.scrollY < 43) {
+        setIsOnTop(true);
+      } else {
+        setIsOnTop(false);
+      }
+
+      setPrevScrollPos(currentScrollPos);
+      setVisible(isVisible);
+    };
+    window.addEventListener("scroll", handleScroll);
+
     if (isOpenMenu || isOpenSearch || isOpenCart) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
@@ -41,8 +58,9 @@ const Header = () => {
     }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [isOpenMenu, isOpenSearch, isOpenCart]);
+  }, [isOpenMenu, isOpenSearch, isOpenCart, prevScrollPos]);
 
   const handleClickOutside = (e) => {
     if (
@@ -60,9 +78,19 @@ const Header = () => {
     return;
   };
   const lang = useSelector((state) => state.homeReducer.language);
+  let headerStyle = "";
+  if (visible && isOnTop) {
+    headerStyle = { position: "relative" };
+  } else if (visible === true && isOnTop === false) {
+    headerStyle = { top: "0" };
+  } else if (visible === false && isOnTop === true) {
+    headerStyle = { top: " 0" };
+  } else {
+    headerStyle = { top: "-100px" };
+  }
 
   return (
-    <header className={"header "}>
+    <header className={`header `} style={headerStyle}>
       <div className="header-content relative">
         {/* // Wrap header -------------------------------------- */}
         <div

@@ -2,8 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import CardItem from "../Card-Item/CardItem";
 import "./ProductList.scss";
 import ArrDown from "../../assets/ArrowDown";
-import { GrView } from "react-icons/gr";
-
+import { FormattedMessage } from "react-intl";
 const ProductList = () => {
   const [isOpenPopup, setIsOpenPopup] = useState(false);
   const popupProductNav = useRef(null);
@@ -42,7 +41,7 @@ const ProductList = () => {
             onClick={handleOpenPopup}
           >
             <p className="relative">
-              best seller
+              <FormattedMessage id="product-list.best-seller" />
               <span>
                 {" "}
                 <ArrDown className="w-4 h-4 font-normal absolute top-[25px] right-[-45px]" />
