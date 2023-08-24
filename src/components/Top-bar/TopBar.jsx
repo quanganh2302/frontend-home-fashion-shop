@@ -5,7 +5,7 @@ import Instagram from "../../assets/InstagramIcon";
 import Pinterest from "../../assets/Pinterest";
 import Twitter from "../../assets/TwitterIcon";
 import ArrowDown from "../../assets/ArrowDown";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { LANGUAGE, CURRENCY } from "../../utils/constant";
 import "./TopBar.scss";
 import { useDispatch, useSelector } from "react-redux";
@@ -71,11 +71,17 @@ const TopBar = () => {
       className={`topBar flex items-center justify-center md:justify-between bg-topBarBgColor text-white min-h-[43px] px-[15px] md:px-[95px]`}
     >
       <div className="topBar-left ps-[15px] hidden md:flex gap-x-4 relative">
-        <Facebook className="facebook " />
+        <a href="https://www.facebook.com/quanganh.dev/">
+          <Facebook className="facebook " />
+        </a>
         <Instagram className="instagram" />
-        <Twitter className="twitter" />
+        <a href="https://www.linkedin.com/in/lucas-doan/">
+          <AiFillLinkedin className="twitter" />
+        </a>
         <Pinterest className="pinterest" />
-        <AiFillGithub className="gitHub" />
+        <a href="https://github.com/quanganh2302">
+          <AiFillGithub className="gitHub" />
+        </a>
       </div>
       <div className="topBar-center font-poppins text-para2 font-normal text-center">
         <FormattedMessage id="top-bar.title" />

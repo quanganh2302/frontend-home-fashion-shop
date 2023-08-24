@@ -273,6 +273,12 @@
       &:hover {
         background-size: 120%;
         transition: all 0.5s;
+        @media screen and (min-width: 360px) {
+          background-size: 150%;
+        }
+        @media screen and (min-width: 768px) {
+          background-size: 120%;
+        }
         &::after {
           height: 100%;
         }
@@ -345,6 +351,12 @@
       &:hover {
         background-size: 120%;
         transition: all 0.5s;
+        @media screen and (min-width: 360px) {
+          background-size: 150%;
+        }
+        @media screen and (min-width: 768px) {
+          background-size: 120%;
+        }
         &::after {
           height: 100%;
         }

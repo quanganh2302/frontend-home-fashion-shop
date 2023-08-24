@@ -5,7 +5,7 @@ import Facebook from "../../assets/FacebookIcon";
 import Instagram from "../../assets/InstagramIcon";
 import Pinterest from "../../assets/Pinterest";
 import Twitter from "../../assets/TwitterIcon";
-import { AiFillGithub, AiOutlineClose } from "react-icons/ai";
+import { AiFillGithub, AiOutlineClose, AiFillLinkedin } from "react-icons/ai";
 import { BsArrowRight, BsPlusLg } from "react-icons/bs";
 import { ReactComponent as MasterImg } from "../../assets/footer-visa.svg";
 import { ReactComponent as ApplePay } from "../../assets/apple_pay.svg";
@@ -62,21 +62,30 @@ const Footer = () => {
                 </div>
               </div>
               <div className="footer-left-social">
-                <div className="social-item-1">
+                <a
+                  className="social-item-1"
+                  href="https://www.facebook.com/quanganh.dev/"
+                >
                   <Facebook className="facebook " />
-                </div>
+                </a>
                 <div className="social-item-2">
                   <Instagram className="instagram" />
                 </div>
-                <div className="social-item-3">
-                  <Twitter className="twitter" />
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/lucas-doan/"
+                  className="social-item-3"
+                >
+                  <AiFillLinkedin className="twitter" />
+                </a>
                 <div className="social-item-4">
                   <Pinterest className="pinterest" />
                 </div>
-                <div className="social-item-5">
+                <a
+                  className="social-item-5"
+                  href="https://github.com/quanganh2302"
+                >
                   <AiFillGithub className="gitHub" />
-                </div>
+                </a>
               </div>
             </div>
             <div className="footer-right ">
@@ -260,21 +269,30 @@ const Footer = () => {
                 </div>
               </div>
               <div className="footer-left-social">
-                <div className="social-item-1">
+                <a
+                  className="social-item-1"
+                  href="https://www.facebook.com/quanganh.dev/"
+                >
                   <Facebook className="facebook " />
-                </div>
+                </a>
                 <div className="social-item-2">
                   <Instagram className="instagram" />
                 </div>
-                <div className="social-item-3">
-                  <Twitter className="twitter" />
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/lucas-doan/"
+                  className="social-item-3"
+                >
+                  <AiFillLinkedin className="twitter" />
+                </a>
                 <div className="social-item-4">
                   <Pinterest className="pinterest" />
                 </div>
-                <div className="social-item-5">
+                <a
+                  className="social-item-5"
+                  href="https://github.com/quanganh2302"
+                >
                   <AiFillGithub className="gitHub" />
-                </div>
+                </a>
               </div>
             </div>
           </div>
