@@ -126,6 +126,7 @@
           padding: 6px 10px;
           transition: none;
           border-top: 1px solid rgba($color: #868686, $alpha: 0.3);
+          z-index: 50;
           p {
             opacity: 0;
           }
@@ -338,6 +339,8 @@
     }
   }
 }
+
+
 
 @keyframes heart-beat {
   0% {

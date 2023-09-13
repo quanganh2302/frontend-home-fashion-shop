@@ -54,6 +54,31 @@ $xl: 1700px;
   box-shadow: 0 0 26px #0000000f;
 }
 
+.custom-scroll-bar {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #0000000d;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #0000001f;
+    border-radius: 10px;
+
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #0000001f;
+  }
+}
+
 /* animation  */
 @keyframes slide-up {
   from {

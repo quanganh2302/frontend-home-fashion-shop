@@ -1,0 +1,32 @@
+.men-template {
+  width: 120%;
+  height: 50px;
+  display: flex;
+  gap: 0;
+  background-color: #f2ece2;
+  @for $i from 0 through 5 {
+    .template-item#{$i} {
+      text-align: center;
+      margin: 0;
+      height: 50px;
+      padding: 15px 30px;
+      font-size: 10px;
+      font-weight: 500;
+      animation-name: rightToLeft#{$i};
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@for $i from 0 through 5 {
+  @keyframes rightToLeft#{$i} {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}

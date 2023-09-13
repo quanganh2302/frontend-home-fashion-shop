@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
-import styles from "../../styles";
-import Logo from "../../assets/logo";
+import ShoppingCart from "../Shopping-cart/ShoppingCart";
+import ShoppingCartItem from "../Shopping-Cart-Item/ShoppingCartItem";
 import { BiUser, BiSearch, BiMenu } from "react-icons/bi";
 import { FiHeart } from "react-icons/fi";
 import { BsCartPlus } from "react-icons/bs";
@@ -53,8 +53,10 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
 
     if (isOpenMenu || isOpenSearch || isOpenCart) {
+      document.body.style.overflow = "hidden";
       document.addEventListener("mousedown", handleClickOutside);
     } else {
+      document.body.style.overflow = "auto";
       document.removeEventListener("mousedown", handleClickOutside);
     }
     return () => {
@@ -105,9 +107,9 @@ const Header = () => {
             <div
               className={`header-women uppercase cursor-pointer hidden md:flex`}
             >
-              <a className="women-nav" href="#">
+              <NavLink className="women-nav" to="/">
                 <FormattedMessage id="header.women" />
-              </a>
+              </NavLink>
               <div
                 className={`popup-women box-shadow-popup hidden justify-around p-[30px]`}
               >
@@ -278,9 +280,9 @@ const Header = () => {
             <div
               className={`header-men uppercase cursor-pointer hidden md:flex`}
             >
-              <a className="man-nav" href="#">
+              <NavLink className="man-nav" to="/men">
                 <FormattedMessage id="header.men" />
-              </a>
+              </NavLink>
               <div
                 className={`popup-men box-shadow-popup hidden justify-around p-[30px]`}
               >
@@ -721,8 +723,23 @@ const Header = () => {
           <div className="cart-title flex justify-start items-center uppercase">
             <FormattedMessage id="header.shopping-cart" />
           </div>
-          <div className="product-list"></div>
+          <div className="product-list custom-scroll-bar">
+            <ShoppingCartItem />
+            <ShoppingCartItem />
+            <ShoppingCartItem />
+            <ShoppingCartItem />
+            <ShoppingCartItem />
+            <ShoppingCartItem />
+          </div>
+          <div className="shopping-cart-footer">
+            <div className="subtotal">
+              Subtotal: <span>$68.00 USD</span>
+            </div>
+            <div className="view-cart">view cart</div>
+            <div className="check-out">check out</div>
+          </div>
         </div>
+
         {/* //Header popup search -------------------------------- */}
         <div
           ref={popupSearch}

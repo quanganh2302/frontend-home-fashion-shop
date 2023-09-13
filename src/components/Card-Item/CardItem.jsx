@@ -2,15 +2,22 @@ import React from "react";
 import "./Card-item.scss";
 import HeartIcon from "../../assets/HeartIcon";
 import { BsEye, BsCartPlus } from "react-icons/bs";
+import { useDispatch } from "react-redux";
+import { openPopup } from "../../store/Home/thunk";
 
 const CardItem = () => {
+  const dispatch = useDispatch();
+  const handleOpenPopup = () => {
+    dispatch(openPopup());
+  };
+
   let color = "red";
   return (
     <section className="card-item">
       <div className="wrap-item">
         <div className="warp-image">
           <div className="item-image"></div>
-          <div className="item-quick-view">
+          <div className="item-quick-view" onClick={handleOpenPopup}>
             <p>Quick view</p>
             <BsEye className="icon-view" />
           </div>

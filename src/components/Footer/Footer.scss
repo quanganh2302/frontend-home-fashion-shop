@@ -13,13 +13,13 @@
         padding: 60px 0;
         display: flex;
         justify-content: space-between;
-        align-items: start;
+        align-items: flex-start;
         border-bottom: 1px solid #535356;
         .footer-left {
           width: 50%;
           display: flex;
           justify-content: center;
-          align-items: start;
+          align-items: flex-start;
           flex-direction: column;
           .footer-left-input {
             margin-bottom: 40px;
@@ -67,7 +67,7 @@
           }
           .footer-left-social {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             gap: 15px;
             .social-item-1,
@@ -159,7 +159,7 @@
         .footer-right {
           width: 40%;
           display: flex;
-          align-items: start;
+          align-items: flex-start;
           justify-content: space-between;
           @media screen and (min-width: 768px) {
             display: none;
@@ -246,7 +246,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     @media screen and (min-width: 360px) {
       display: flex;
     }
@@ -286,7 +286,7 @@
         width: 95%;
         display: flex;
         justify-content: center;
-        align-items: start;
+        align-items: flex-start;
         flex-direction: column;
         .footer-left-input {
           margin-bottom: 40px;
@@ -325,7 +325,7 @@
         }
         .footer-left-social {
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           align-items: center;
           gap: 15px;
           margin-bottom: 10px;

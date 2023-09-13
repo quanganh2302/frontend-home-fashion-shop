@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 // import { fetchProfile } from "./features/Auth/thunk";
 import RouteComponent from "./hoc/RouteComponent";
 import HomeWomen from "./pages/Home-women/HomeWomen.jsx";
-import HomeMan from "./pages/Home-men/HomeMen.jsx";
+import HomeMen from "./pages/Home-men/HomeMen.jsx";
 import HomeLayout from "./hoc/HomeLayout";
 
 // import SignIn from "./features/Auth/SignIn";
@@ -39,7 +39,7 @@ function App() {
         >
           <Route
             path="/men"
-            element={<RouteComponent Component={HomeMan}></RouteComponent>}
+            element={<RouteComponent Component={HomeMen}></RouteComponent>}
           ></Route>
         </Route>
         <Route
@@ -48,7 +48,7 @@ function App() {
         >
           <Route
             path="/bags"
-            element={<RouteComponent Component={HomeMan}></RouteComponent>}
+            element={<RouteComponent Component={HomeMen}></RouteComponent>}
           ></Route>
         </Route>
         <Route
