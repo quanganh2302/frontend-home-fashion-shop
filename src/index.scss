@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -46,6 +46,19 @@ $xl: 1700px;
   }
 }
 
+.container-padding {
+  padding: 0 95px;
+  @media (min-width: $xs) {
+    padding: 0 15px;
+  }
+  @media (min-width: $sm) {
+    padding: 0 15px;
+  }
+  @media (min-width: $md) {
+    padding: 0 95px;
+  }
+}
+
 .box-shadow {
   box-shadow: 0 0 20px rgb(0 0 0 / 20%);
 }
@@ -70,7 +83,6 @@ $xl: 1700px;
   &::-webkit-scrollbar-thumb {
     background: #0000001f;
     border-radius: 10px;
-
   }
 
   /* Handle on hover */

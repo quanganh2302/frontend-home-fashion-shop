@@ -1,0 +1,142 @@
+.men-banner .men-swiper-item {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 70px;
+}
+@media screen and (min-width: 360px) {
+  .men-banner .men-swiper-item {
+    height: 300px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .men-banner .men-swiper-item {
+    height: 400px;
+    justify-content: center;
+    background-position: top;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .men-banner .men-swiper-item {
+    height: 100vh;
+    justify-content: flex-start;
+    background-position: center;
+  }
+}
+.men-banner .men-swiper-item .item-content .content-title {
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: all 0s;
+}
+@media screen and (min-width: 360px) {
+  .men-banner .men-swiper-item .item-content .content-title {
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .men-banner .men-swiper-item .item-content .content-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+.men-banner .men-swiper-item .item-content .content-call {
+  font-size: 60px;
+  color: white;
+  font-weight: 300;
+  line-height: 70px;
+  margin-bottom: 20px;
+  transform: translateX(1500px);
+  opacity: 0;
+  transition: all 0s;
+}
+@media screen and (min-width: 360px) {
+  .men-banner .men-swiper-item .item-content .content-call {
+    font-size: 35px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .men-banner .men-swiper-item .item-content .content-call {
+    font-size: 45px;
+    margin-bottom: 4px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .men-banner .men-swiper-item .item-content .content-call {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+.men-banner .men-swiper-item .item-content .banner-btn {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0s;
+}
+@media screen and (min-width: 360px) {
+  .men-banner .men-swiper-item .item-content .banner-btn {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .men-banner .men-swiper-item .item-content .banner-btn {
+    margin: 0;
+  }
+}
+.men-banner .men-swiper-item.swiper-slide-active .item-content .content-title {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.6s;
+}
+.men-banner .men-swiper-item.swiper-slide-active .item-content .content-call {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1s;
+  transition-delay: 400ms;
+}
+.men-banner .men-swiper-item.swiper-slide-active .item-content .banner-btn {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.6s;
+  transition-delay: 1s;
+}
+.men-banner .swiper-button-prev,
+.men-banner .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.men-banner .swiper-button-prev:hover,
+.men-banner .swiper-button-next:hover {
+  border: 2px solid #ff9000;
+  background-color: #ff9000;
+}
+.men-banner .swiper-button-prev::after {
+  font-size: 15px;
+  color: white;
+}
+.men-banner .swiper-button-prev::after:hover {
+  color: #ff9000;
+}
+.men-banner .swiper-button-next::after {
+  font-size: 15px;
+  color: white;
+}
+.men-banner .swiper-button-next::after:hover {
+  color: #ff9000;
+}

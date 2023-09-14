@@ -16,7 +16,6 @@ const MenTemplate = (props) => {
           return (
             <div
               key={index}
-              style={{ width: `${width}%` }}
               className={`template-item${index}`}
             >
               FREE SHIPPING W/ MINIMUM PURCHASE

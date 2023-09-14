@@ -5,7 +5,8 @@ import { BsEye, BsCartPlus } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { openPopup } from "../../store/Home/thunk";
 
-const CardItem = () => {
+const CardItem = (props) => {
+  const { className } = props;
   const dispatch = useDispatch();
   const handleOpenPopup = () => {
     dispatch(openPopup());
@@ -13,7 +14,7 @@ const CardItem = () => {
 
   let color = "red";
   return (
-    <section className="card-item">
+    <section className={`card-item ${className}`}>
       <div className="wrap-item">
         <div className="warp-image">
           <div className="item-image"></div>

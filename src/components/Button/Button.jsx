@@ -28,6 +28,7 @@ const Button = (props) => {
         fontWeight: fontWeight,
         textAlign: "center",
         textTransform: "uppercase",
+        cursor: "pointer",
       }}
     >
       {text}

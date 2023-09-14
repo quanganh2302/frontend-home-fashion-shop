@@ -12,9 +12,9 @@ const HomeMen = () => {
     <section>
       <MenBanner />
       <MenTemplate items={5} />
-      <MenCategory />
-      <MenShopNow />
       <MenRecommend />
+      <MenShopNow />
+      <MenCategory />
       <MenBlog />
       <MenSlider />
       <ShippingInfo />
