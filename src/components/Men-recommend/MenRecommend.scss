@@ -1,11 +1,13 @@
 .men-recommend {
   padding: 0 95px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   @media screen and (min-width: 360px) {
     padding: 0 15px;
+    margin-bottom: 50px;
   }
   @media screen and (min-width: 1180px) {
     padding: 0 95px;
+    margin-bottom: 80px;
   }
   .recommend-title {
     font-size: 14px;
@@ -15,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     &::before,
     &::after {
       content: "";
@@ -25,9 +27,11 @@
       background-color: #e6e6e6;
       @media screen and (min-width: 360px) {
         width: 20%;
+        margin-bottom: 30px;
       }
       @media screen and (min-width: 760px) {
         width: 35%;
+        margin-bottom: 50px;
       }
     }
     &::before {
