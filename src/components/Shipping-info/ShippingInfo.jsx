@@ -6,9 +6,10 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { FormattedMessage } from "react-intl";
 
-const ShippingInfo = () => {
+const ShippingInfo = (props) => {
+  const { className } = props;
   return (
-    <section className="shipping-info">
+    <section className={`shipping-info ${className}`}>
       <div className="shipping-container container-custom">
         <Swiper
           spaceBetween={50}
@@ -61,9 +62,11 @@ const ShippingInfo = () => {
                 </svg>
               </div>
               <div className="item-text">
-                <h4><FormattedMessage id="shipping.title-1" /></h4>
+                <h4>
+                  <FormattedMessage id="shipping.title-1" />
+                </h4>
                 <p>
-                <FormattedMessage id="shipping.content-up-1" />
+                  <FormattedMessage id="shipping.content-up-1" />
                   <br />
                   <FormattedMessage id="shipping.content-down-1" />
                 </p>
@@ -102,9 +105,11 @@ const ShippingInfo = () => {
                 </svg>
               </div>
               <div className="item-text">
-              <h4><FormattedMessage id="shipping.title-2" /></h4>
+                <h4>
+                  <FormattedMessage id="shipping.title-2" />
+                </h4>
                 <p>
-                <FormattedMessage id="shipping.content-up-2" />
+                  <FormattedMessage id="shipping.content-up-2" />
                   <br />
                   <FormattedMessage id="shipping.content-down-2" />
                 </p>
@@ -129,9 +134,11 @@ const ShippingInfo = () => {
                 </svg>
               </div>
               <div className="item-text">
-              <h4><FormattedMessage id="shipping.title-3" /></h4>
+                <h4>
+                  <FormattedMessage id="shipping.title-3" />
+                </h4>
                 <p>
-                <FormattedMessage id="shipping.content-up-3" />
+                  <FormattedMessage id="shipping.content-up-3" />
                   <br />
                   <FormattedMessage id="shipping.content-down-3" />
                 </p>

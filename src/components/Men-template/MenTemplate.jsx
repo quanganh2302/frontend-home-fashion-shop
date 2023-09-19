@@ -6,7 +6,6 @@ const MenTemplate = (props) => {
   for (let i = 0; i <= items; i++) {
     arrTemplate.push(i);
   }
-  console.log(arrTemplate);
   const width = 100 / items;
   return (
     <section className="men-template">

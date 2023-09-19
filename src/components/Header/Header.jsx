@@ -585,9 +585,9 @@ const Header = () => {
             <div
               className={`header-about uppercase cursor-pointer hidden md:flex`}
             >
-              <a className="about-nav" href="#">
-                <FormattedMessage id="header.about" />
-              </a>
+              <NavLink className="about-nav" to={"/contact"}>
+                <FormattedMessage id="header.contact" />
+              </NavLink>
             </div>
             <div
               className={`header-menu block md:hidden`}
@@ -599,11 +599,13 @@ const Header = () => {
           {/* // Header top middle ---------------------------------- */}
           <div className="header-top-middle w-1/3 flex justify-center">
             {/* <Logo className="header-logo w-[30px]" /> */}
-            <img
-              src={require("../../assets/lux-logo.png")}
-              alt=""
-              className={`w-[80px] cursor-pointer`}
-            />
+            <NavLink to={"/"}>
+              <img
+                src={require("../../assets/lux-logo.png")}
+                alt=""
+                className={`w-[80px] cursor-pointer`}
+              />
+            </NavLink>
           </div>
           {/* //Header top right ----------------------------------- */}
           <div className={`header-top-right w-1/3`}>

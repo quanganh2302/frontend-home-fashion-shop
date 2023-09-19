@@ -15,7 +15,10 @@ import imageBg2 from "../../assets/Simona-Ribbed-Cardigan_02.jpg";
 import imageBg3 from "../../assets/Simona-Ribbed-Cardigan_03.jpg";
 import imageBg4 from "../../assets/Simona-Ribbed-Cardigan_04.jpg";
 import imageBg5 from "../../assets/Simona-Ribbed-Cardigan_05.jpg";
-
+// My component
+import AddWishlist from "../Add-wishlist/AddWishlist";
+import Price from "../Price/Price";
+import SizeList from "../Size-list/SizeList";
 const PopupProduct = () => {
   const dispatch = useDispatch();
   let isPopupOpen = useSelector((state) => state.homeReducer.isPopupOpen);
@@ -30,14 +33,6 @@ const PopupProduct = () => {
       document.body.style.overflow = "auto";
     }
   }, [isPopupOpen]);
-
-  //   useEffect(() => {
-  //     if (popupStatus) {
-  //       document.addEventListener("mousedown", handleClickOutside);
-  //     } else {
-  //       document.removeEventListener("mousedown", handleClickOutside);
-  //     }
-  //   }, [popupStatus]);
 
   const popupUseRef = useRef(null);
 
@@ -122,10 +117,7 @@ const PopupProduct = () => {
           </div>
           <div className="popup-top">
             <div className="product-name">Simona Ribbed Cardigan</div>
-            <div className="product-price">
-              <del>$99.00</del>
-              <ins>$86.00</ins>
-            </div>
+            <Price delPrice={"92.00"} insPrice={"89.00"} />
           </div>
           <div className="popup-content">
             <div className="product-desc">
@@ -136,32 +128,13 @@ const PopupProduct = () => {
             </div>
             <div className="product-size">
               <p>SIZE: S</p>
-              <div className="details-size">
-                <div className="size-item">s</div>
-                <div className="size-item">m</div>
-                <div className="size-item">l</div>
-                <div className="size-item">xl</div>
-              </div>
+              <SizeList />
             </div>
             <div className="product-buy">
-              {/* <div className="buy-left">
-                <div className="minus" onClick={decreaseProduct}>
-                  -
-                </div>
-                <div className="quantity">{quantityPopup}</div>
-                <div className="plus" onClick={increaseProduct}>
-                  +
-                </div>
-              </div> */}
               <SetQuantity className="buy-left" />
               <div className="buy-right">add to cart</div>
             </div>
-            <div className="product-wishlist">
-              <div className="wishlist-icon">
-                <HeartIcon className="heart-icon" />
-              </div>
-              <span>add to wishlist</span>
-            </div>
+            <AddWishlist />
           </div>
           <div className="popup-footer">
             View full details{" "}

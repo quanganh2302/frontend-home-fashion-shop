@@ -13,6 +13,7 @@ import { ReactComponent as Visa } from "../../assets/visa.svg";
 import { ReactComponent as America } from "../../assets/american_express.svg";
 import { ReactComponent as Paypal } from "../../assets/paypal.svg";
 import { FormattedMessage } from "react-intl";
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   const lang = useSelector((state) => state.homeReducer.language);
   const [isFooterListOpen, setIsFooterListOpen] = useState(false);
@@ -132,14 +133,14 @@ const Footer = () => {
                 </p>
                 <ul>
                   <li>
-                    <a href="">
+                    <NavLink to="/men">
                       <FormattedMessage id="footer.footer-row-3-1" />
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="">
+                    <NavLink to="/">
                       <FormattedMessage id="footer.footer-row-3-2" />
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <a href="">

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.scss";
+import { NavLink } from "react-router-dom";
 const Button = (props) => {
   const {
     width,
@@ -12,9 +13,11 @@ const Button = (props) => {
     className,
     text,
     bgColor,
+    to,
   } = props;
   return (
-    <section
+    <NavLink
+      to={to}
       className={className}
       style={{
         backgroundColor: bgColor,
@@ -24,15 +27,17 @@ const Button = (props) => {
         borderRadius: radius,
         fontSize: fontSize,
         color: color,
-        lineHeight: height,
         fontWeight: fontWeight,
-        textAlign: "center",
+        transition: "all .5s",
+        justifyContent: "center",
         textTransform: "uppercase",
         cursor: "pointer",
+        display: "flex",
+        alignItems: "center",
       }}
     >
       {text}
-    </section>
+    </NavLink>
   );
 };
 

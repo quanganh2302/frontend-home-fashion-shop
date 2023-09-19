@@ -4,20 +4,23 @@ import HeartIcon from "../../assets/HeartIcon";
 import { BsEye, BsCartPlus } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { openPopup } from "../../store/Home/thunk";
+//My component
+import ColorList from "../Color-list/ColorList";
 
 const CardItem = (props) => {
-  const { className } = props;
+  const { className, backgroundImage } = props;
   const dispatch = useDispatch();
   const handleOpenPopup = () => {
     dispatch(openPopup());
   };
-
-  let color = "red";
   return (
     <section className={`card-item ${className}`}>
       <div className="wrap-item">
         <div className="warp-image">
-          <div className="item-image"></div>
+          <div
+            // style={{ backgroundImage: `url(${backgroundImage})` }}
+            className="item-image"
+          ></div>
           <div className="item-quick-view" onClick={handleOpenPopup}>
             <p>Quick view</p>
             <BsEye className="icon-view" />
@@ -34,13 +37,7 @@ const CardItem = (props) => {
         <div className="item-details">
           <div className="item-name">Ultimate Crop Bandeau Tops</div>
           <div className="item-price">$89.00</div>
-          <div className="item-colors flex justify-start items-center gap-3">
-            <div
-              className="color"
-              style={{ backgroundColor: `${color}` }}
-            ></div>
-            <div className={`color`}></div>
-          </div>
+          <ColorList diameter={"18px"} color={"red"} />
         </div>
       </div>
     </section>

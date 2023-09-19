@@ -4,7 +4,7 @@ import Footer from "../components/Footer/Footer";
 import TopBar from "../components/Top-bar/TopBar";
 import { Outlet } from "react-router-dom";
 import PopupProduct from "../components/Popup-product/PopupProduct";
-
+import BackToTop from "../components/Back-to-top/BackToTop";
 export default function HomeLayout() {
   return (
     <div className=" overflow-hidden relative">
@@ -12,6 +12,7 @@ export default function HomeLayout() {
       <Header />
       <PopupProduct />
       <Outlet />
+      <BackToTop />
       <Footer />
     </div>
   );
