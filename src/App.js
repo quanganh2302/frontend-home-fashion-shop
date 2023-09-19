@@ -10,6 +10,7 @@ import {
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 // import { fetchProfile } from "./features/Auth/thunk";
+import ScrollToTop from "./utils/ScrollToTop";
 import RouteComponent from "./hoc/RouteComponent";
 import HomeWomen from "./pages/Home-women/HomeWomen.jsx";
 import HomeMen from "./pages/Home-men/HomeMen.jsx";
@@ -24,6 +25,7 @@ import HomeProductList from "./pages/Home-product-list/HomeProductList.jsx";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         {/* <Route
           path="/signin"

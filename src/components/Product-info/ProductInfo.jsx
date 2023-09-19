@@ -26,7 +26,7 @@ const ProductInfo = () => {
     }
   }, []);
   return (
-    <section className="product-info container-padding">
+    <section className="product-info-home container-padding">
       <div className="info-nav">
         <h3
           onClick={() => handleShowContent(1)}

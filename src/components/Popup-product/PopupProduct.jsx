@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./PopupProduct.scss";
+import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { closePopup } from "../../store/Home/thunk";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -136,12 +137,16 @@ const PopupProduct = () => {
             </div>
             <AddWishlist />
           </div>
-          <div className="popup-footer">
+          <NavLink
+            onClick={handleClosePopup}
+            to={"/product"}
+            className="popup-footer"
+          >
             View full details{" "}
             <span>
               <BsArrowRight />
             </span>
-          </div>
+          </NavLink>
         </div>
       </div>
       <div className="popup-overlay" onClick={handleClickOutside}></div>
