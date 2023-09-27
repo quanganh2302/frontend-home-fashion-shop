@@ -455,7 +455,7 @@ const Footer = () => {
         <div className="footer-bottom-left pt-6">
           All Rights Reserved © 2023 <span className="store-name">Lux</span>{" "}
           store - Developed by{" "}
-          <span className="signature">Lucas - Quang Anh</span>
+          <span className="signature">Lucas Doan</span>
         </div>
       </div>
     </footer>

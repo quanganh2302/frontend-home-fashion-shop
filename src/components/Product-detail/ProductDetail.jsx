@@ -160,46 +160,76 @@ const ProductDetail = () => {
           onSwiper={updateSwiperThumbs}
           spaceBetween={"10x"}
           slidesPerView={1}
+          ref={containerRef}
         >
-          <Zoom>
-            <SwiperSlide
-              style={{
-                backgroundImage: `url(${imgBgProduct1})`,
-                transformOrigin: `${mousePosition.posX}% ${mousePosition.posY}%`,
-              }}
-              className="slider-item"
-              onMouseMove={onMouseMove}
-              onMouseLeave={onMouseLeave}
-              ref={containerRef}
-            ></SwiperSlide>
-          </Zoom>
           <SwiperSlide
-            style={{ backgroundImage: `url(${imgBgProduct2})` }}
+            style={{
+              backgroundImage: `url(${imgBgProduct1})`,
+              transformOrigin: `${mousePosition.posX}% ${mousePosition.posY}%`,
+            }}
             className="slider-item"
+            onMouseMove={onMouseMove}
+            onMouseLeave={onMouseLeave}
           ></SwiperSlide>
           <SwiperSlide
-            style={{ backgroundImage: `url(${imgBgProduct3})` }}
+            style={{
+              backgroundImage: `url(${imgBgProduct2})`,
+              transformOrigin: `${mousePosition.posX}% ${mousePosition.posY}%`,
+            }}
             className="slider-item"
+            onMouseMove={onMouseMove}
+            onMouseLeave={onMouseLeave}
+          ></SwiperSlide>
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${imgBgProduct3})`,
+              transformOrigin: `${mousePosition.posX}% ${mousePosition.posY}%`,
+            }}
+            className="slider-item"
+            onMouseMove={onMouseMove}
+            onMouseLeave={onMouseLeave}
+          ></SwiperSlide>
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${imgBgProduct4})`,
+              transformOrigin: `${mousePosition.posX}% ${mousePosition.posY}%`,
+            }}
+            className="slider-item"
+            onMouseMove={onMouseMove}
+            onMouseLeave={onMouseLeave}
+          ></SwiperSlide>
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${imgBgProduct4})`,
+              transformOrigin: `${mousePosition.posX}% ${mousePosition.posY}%`,
+            }}
+            className="slider-item"
+            onMouseMove={onMouseMove}
+            onMouseLeave={onMouseLeave}
+          ></SwiperSlide>
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${imgBgProduct4})`,
+              transformOrigin: `${mousePosition.posX}% ${mousePosition.posY}%`,
+            }}
+            className="slider-item"
+            onMouseMove={onMouseMove}
+            onMouseLeave={onMouseLeave}
+          ></SwiperSlide>
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${imgBgProduct4})`,
+              transformOrigin: `${mousePosition.posX}% ${mousePosition.posY}%`,
+            }}
+            className="slider-item"
+            onMouseMove={onMouseMove}
+            onMouseLeave={onMouseLeave}
           ></SwiperSlide>
           <SwiperSlide
             style={{ backgroundImage: `url(${imgBgProduct4})` }}
             className="slider-item"
-          ></SwiperSlide>
-          <SwiperSlide
-            style={{ backgroundImage: `url(${imgBgProduct4})` }}
-            className="slider-item"
-          ></SwiperSlide>
-          <SwiperSlide
-            style={{ backgroundImage: `url(${imgBgProduct4})` }}
-            className="slider-item"
-          ></SwiperSlide>
-          <SwiperSlide
-            style={{ backgroundImage: `url(${imgBgProduct4})` }}
-            className="slider-item"
-          ></SwiperSlide>
-          <SwiperSlide
-            style={{ backgroundImage: `url(${imgBgProduct4})` }}
-            className="slider-item"
+            onMouseMove={onMouseMove}
+            onMouseLeave={onMouseLeave}
           ></SwiperSlide>
         </Swiper>
       </div>
